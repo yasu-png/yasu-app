@@ -1,0 +1,27 @@
+.wrapper{
+    display: flex;
+}
+.side-space{
+    height: 100vh;
+    width: 100px;
+    background-color: red;
+    .contents-area{
+        height: 100vh;
+        width: 100px;
+        .btn{
+            height: 100vh;
+            width: 100px;
+            color: blue;
+        }
+    }
+}
+.main-space{
+    height: 100vh;
+    width: 300px;
+    background-color: yellow;
+}
+.chat-space{
+    height: 100vh;
+    width: calc(100% - 350px);
+    background-color: gray;
+}
