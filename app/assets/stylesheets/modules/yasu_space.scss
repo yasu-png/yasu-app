@@ -1,17 +1,24 @@
+* {
+    box-sizing: border-box;
+}
 .wrapper{
     display: flex;
 }
 .side-space{
     height: 100vh;
-    width: 100px;
-    background-color: red;
-    .contents-area{
-        height: 100vh;
-        width: 100px;
-        .btn{
-            height: 100vh;
-            width: 100px;
-            color: blue;
+    width: 50px;
+    background-color: royalblue;
+    &_contents{
+        text-align: center;
+        &_home{
+            font-size: 30px;
+            color: deepskyblue;
+            cursor: pointer;
+        }
+        &_user{
+            font-size: 30px;
+            color: deepskyblue;
+            cursor: pointer;
         }
     }
 }
@@ -19,6 +26,64 @@
     height: 100vh;
     width: 300px;
     background-color: yellow;
+    &_name-serch{
+        height: 80px;
+        background-color: green;
+        display: flex;
+        &_point{
+            height: 30px;
+            width: 260px;
+            background-color: gray;
+            margin: auto;
+            line-height: 30px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            &_right{
+                font-size: large;
+            }
+        }
+    }
+    &_profile{
+        height: 50px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_big-box{
+            height: 30px;
+            width: 260px;
+            line-height: 30px;
+            padding: 0 10px;
+            display: flex;
+            justify-content: space-between;
+            &_user-name{
+            }
+            &_backet{
+                display: flex;
+                &_left-box{
+                    margin-left: 5px;
+                    font-size: large;
+                    cursor: pointer;
+                }
+                &_right-box{
+                    margin-left: 5px;
+                    font-size: large;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &_group{
+        height: 100px;
+        background-color: pink;
+        &_grpups{
+            height: 65px;
+            width: 300px;
+            color: #ffffff;
+        }
+    }
 }
 .chat-space{
     height: 100vh;

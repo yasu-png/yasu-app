@@ -1,2 +1,22 @@
 .main-space
-  メインスペース
+  .main-space_name-serch
+    .main-space_name-serch_point
+      .main-space_name-serch_point_left
+        名前で検索
+      .main-space_name-serch_point_right
+        = fa_icon 'search', class: 'icon'
+  .main-space_profile
+    .main-space_profile_big-box
+      .main-space_profile_user-name
+        name
+      .main-space_profile_big-box_backet
+        .main-space_profile_big-box_backet_left-box
+          = fa_icon 'edit', class: 'icon'
+        .main-space_profile_big-box_backet_right-box
+          = fa_icon 'cog', class: 'icon'
+  .main-space_group
+    .main-space_group__groups
+      .main-space_group__groups__member
+        グループ名
+      .main-space_group__groups__new-message
+        最新のメッセージ
